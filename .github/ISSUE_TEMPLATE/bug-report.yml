@@ -14,7 +14,7 @@ body:
     attributes:
       label: What happened?
       description: What happened? And what did you expect to happen?
-      placeholder: [blank] occurred, when I expected [blank] to occur instead.
+      placeholder: "[blank] occurred, when I expected [blank] to occur instead."
     validations:
       required: true
   - type: textarea
