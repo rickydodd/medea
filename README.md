@@ -10,7 +10,7 @@ Medea is a media rating API.
   - Not all basic functionalities need to be implemented before migrating to a database system.
 - [x] Improve ergonomics of bug reporting and feature suggesting on GitHub issues.
   - Issue templates seem to be an appropriate route.
-- [ ] Basic continuous integration.
+- [x] Basic continuous integration.
 - [ ] Determine an appropriate database system.
 - [ ] Basic authentication and authorisation.
 - [x] Implement Makefile to ease the barrier to entry on contributing.
