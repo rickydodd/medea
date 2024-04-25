@@ -18,22 +18,4 @@ jobs:
         run: go get .
       - name: Build application
         run: go build -o medea/api ./...
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: api
-          path: medea
 
-  run:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: api
-          path: medea
-      - name: Run application
-        id: run-application
-        run: ./medea/api
