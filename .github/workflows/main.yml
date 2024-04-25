@@ -3,6 +3,9 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go-version: [1.21, 1.22]
 
     steps:
       - name: Checkout repository
@@ -10,7 +13,9 @@ jobs:
       - name: Set up Go ${{ matrix.go-version }}
         uses: actions/setup-go@v5
         with:
-          go-version: '>=1.22.2'
+          go-version: ${{ matrix.go-version }}
+      - name: Install dependencies
+        run: go get .
       - name: Build application
         run: go build -o medea/api ./...
       - name: Upload artifact
