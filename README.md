@@ -13,6 +13,6 @@ Medea is a media rating API.
 - [ ] Basic continuous integration.
 - [ ] Determine an appropriate database system.
 - [ ] Basic authentication and authorisation.
-- [ ] Implement Makefile to ease the barrier to entry on contributing.
+- [x] Implement Makefile to ease the barrier to entry on contributing.
 - [ ] `CONTRIBUTING.md` file or contributing section in `README.md` file.
 
