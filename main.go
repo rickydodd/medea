@@ -22,7 +22,7 @@ func main() {
 	media := createMedia()
 
 	var port string
-	flag.StringVar(&port, "port", "8080", "port api serves over")
+	flag.StringVar(&port, "port", "8000", "port api serves over")
 	flag.Parse()
 
 	http.HandleFunc("GET /media", func(w http.ResponseWriter, r *http.Request) {
