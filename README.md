@@ -1,6 +1,10 @@
 # Medea
 Medea is a media rating API.
 
+## Design
+### API Capabilities Canvas
+![API Capabilities Canvas](./design/API-Capabilities-Canvas.png)
+
 ## To-Do
 - [ ] In-memory implementation of basic functionalities.
   - `GET` all media.
