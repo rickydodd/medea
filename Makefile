@@ -20,4 +20,4 @@ tidy:
 
 build:
 	make tidy
-	go build -o /tmp/medea ./cmd/medea/main.go
+	go build -o /tmp/medea ./cmd/...

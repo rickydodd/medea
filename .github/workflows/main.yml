@@ -1,4 +1,4 @@
-name: Continuous Integration Pipeline
+name: CI
 on: push
 jobs:
   build:
@@ -14,8 +14,6 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go-version }}
-      - name: Install dependencies
-        run: go get .
       - name: Build application
-        run: go build -o medea/api ./...
+        run: go build -o api ./cmd/...
 
