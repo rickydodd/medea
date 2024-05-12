@@ -1,11 +1,18 @@
 # Medea
+
+![Go 1.21](https://github.com/rickydodd/medea/actions/workflows/go-version-1.21.yml/badge.svg)
+![Go 1.22](https://github.com/rickydodd/medea/actions/workflows/go-version-1.22.yml/badge.svg)
+
 Medea is a media rating API.
 
 ## Design
+
 ### API Capabilities Canvas
+
 ![API Capabilities Canvas](./design/API-Capabilities-Canvas.png)
 
 ## To-Do
+
 - [ ] In-memory implementation of basic functionalities.
   - `GET` all media.
   - `GET` a specific piece of media.
@@ -19,4 +26,3 @@ Medea is a media rating API.
 - [ ] Basic authentication and authorisation.
 - [x] Implement Makefile to ease the barrier to entry on contributing.
 - [ ] `CONTRIBUTING.md` file or contributing section in `README.md` file.
-

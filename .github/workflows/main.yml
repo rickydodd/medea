@@ -1,19 +1,21 @@
 name: CI
-on: push
+on:
+  workflow_call:
+    inputs:
+      go-version:
+        required: true
+        type: string
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        go-version: [1.21, 1.22]
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Set up Go ${{ matrix.go-version }}
+      - name: Set up Go ${{ inputs.go-version }}
         uses: actions/setup-go@v5
         with:
-          go-version: ${{ matrix.go-version }}
+          go-version: ${{ inputs.go-version }}
       - name: Build application
         run: go build -o api ./cmd/...
-
