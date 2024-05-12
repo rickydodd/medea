@@ -2,6 +2,7 @@
 
 ![Go 1.21](https://github.com/rickydodd/medea/actions/workflows/go-version-1.21.yml/badge.svg)
 ![Go 1.22](https://github.com/rickydodd/medea/actions/workflows/go-version-1.22.yml/badge.svg)
+![Tests](https://github.com/rickydodd/medea/actions/workflows/tests.yml/badge.svg)
 
 Medea is a media rating API.
 
